@@ -1,0 +1,140 @@
+.schedule-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  margin: 0 32px 0 32px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(5, 28, 41, 0.98) 0%,
+    rgba(20, 44, 70, 0.9016) 50%,
+    rgba(6, 26, 38, 0.98) 100%
+  );
+  z-index: 1;
+}
+
+.schedule-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.schedule-logo img {
+  width: 320px;
+  margin: 0 auto 40px auto;
+}
+
+.schedule-header h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.schedule-header p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #d0d0d0;
+}
+
+.highlight-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(131, 227, 6, 1);
+  margin-bottom: 40px;
+}
+
+/* Job cards */
+.job-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.job-card {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #000000;
+  min-width: 140px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.job-card:hover {
+  background: rgba(131, 227, 6, 0.1);
+  border-color: rgba(131, 227, 6, 1);
+  color: rgba(131, 227, 6, 1);
+}
+
+/* Responsive */
+@media (max-width: 995px) {
+  .schedule-header h2 {
+    font-size: 28px;
+  }
+  .highlight-heading {
+    font-size: 26px;
+  }
+  .job-card {
+    min-width: 100px;
+    font-size: 14px;
+  }
+  .schedule-section {
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .schedule-section {
+    margin: 0 20px 0 20px;
+  }
+  .schedule-header h2 {
+    font-size: 22px;
+  }
+  .highlight-heading {
+    font-size: 20px;
+  }
+  .job-card {
+    min-width: 90px;
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .schedule-logo img {
+    width: 200px;
+  }
+}
+
+.line {
+  width: 80%;
+  height: 15px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+}

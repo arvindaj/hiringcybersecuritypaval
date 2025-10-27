@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ✅ TEXT STYLES */
+.custom-h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.custom-h2 span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 110%;
+  text-align: center;
+  color: #a6ff00;
+}
+
+.custom-p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  color: #d1d1d1;
+}
+
+/* ✅ LOGO SLIDER */
+.logo-slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.logo-slider {
+  display: flex;
+  width: calc(250px * 30); /* enough width for scrolling */
+  animation: slide 30s linear infinite;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional hover pause */
+.logo-slider:hover {
+  animation-play-state: paused;
+}
+
+/* Optional hover glow */
+.logo-item img {
+  transition: transform 5s ease, opacity 0.3s ease;
+}
+.logo-item img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+

@@ -1,0 +1,144 @@
+.faq-section {
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.faq-item .faq-question {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.faq-item .faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-item.active {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  text-align: left;
+  font-size: 16px;
+  margin-left: 70px;
+}
+
+.faq-item p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.inactive-box {
+  width: 62px;
+  height: 31px;
+  border-radius: 22px;
+  position: relative;
+  background-color: rgb(209, 208, 208);
+}
+
+.inactive-box::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 4px;
+  background: #373636;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1px;
+}
+
+.highlight {
+  color: rgba(131, 219, 16, 1);
+}
+
+@media (max-width: 995px) {
+  .faq-section {
+    min-height: auto;
+    padding: 120px 32px 60px 32px;
+  }
+  .faq-answer {
+    margin-left: 70px;
+    font-size: 14px;
+  }
+
+  .faq-section h2 {
+    font-size: 32px;
+  }
+
+  .inactive-box {
+    width: 52px;
+    height: 26px;
+  }
+  .faq-question {
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-section {
+    padding: 80px 15px 40px 15px;
+  }
+
+  .faq-section h2 {
+    font-size: 24px;
+  }
+
+  .faq-answer {
+    margin-left: 40px;
+    font-size: 13px;
+  }
+
+  .inactive-box {
+    width: 42px;
+    height: 21px;
+  }
+
+  .faq-item p {
+    font-size: 16px;
+  }
+  .faq-answer {
+    font-size: 14px;
+    margin-left: 70px;
+  }
+}
