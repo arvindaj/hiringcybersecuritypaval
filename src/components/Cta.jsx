@@ -12,8 +12,8 @@ const Cta = () => {
      <div className="cta-container">
         <div className="cta-content">
           <div className="cta-left">
-            <img src={ctta} alt="cta bottom" className="heroleft-cover d-none d-lg-block position-absolute top-0 start-0 h-100" />
-            <div className="cta-bottom-text">
+            <img src={ctta} alt="cta bottom" className="heroleft-cover d-none d-lg-block position-absolute top-0 start-0 h-100 mx-lg-2" />
+            <div className="cta-bottom-text mx-lg-5">
               <p className="para-first">WE SUPPORT</p>
               <p className="para-second">To Your Business</p>
             </div>

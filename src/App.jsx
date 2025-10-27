@@ -7,6 +7,9 @@ import Faq from './components/Faq'
 import Schedule from './components/Schedule'
 import Cta from './components/Cta'
 
+import HireJavaDevelopers from './components/hirejavadevelopers'
+import JobCategories from './components/JobCategories'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +23,8 @@ function App() {
     <>
     <Navbar/>
     <HeroSection/>
-
+    <HireJavaDevelopers/>
+    <JobCategories/>
     <Cta/>
     <Faq/>
     <Schedule/>

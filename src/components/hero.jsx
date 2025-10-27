@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/hero.css";
 import heroImg from "../assets/images/heroimg.svg";
 import heroleftImg from "../assets/images/lefthero.svg";
-import arrowImg from "../assets/images/arrow-up-right.png"; // ✅ your arrow image here
+import arrowImg from "../assets/images/arrow-up-right.png";
 
 const HeroSection = () => {
   return (
@@ -14,7 +14,7 @@ const HeroSection = () => {
         className="heroleft-cover d-none d-lg-block position-absolute top-0 start-0 h-100"
       />
 
-      <div className="container position-relative">
+      <div className="container position-relative mt-lg-5  ">
         <div className="row align-items-center">
           {/* Left Content */}
           <div className="col-md-6 text-md-start text-center mb-4 mb-md-0">
@@ -24,8 +24,8 @@ const HeroSection = () => {
               There is Better <br /> Way to Secure
             </h1>
 
-            {/* ✅ Hire Section (with image) */}
-            <div className=" d-flex align-items-bottom justify-content-md-start justify-content-center">
+            {/* Hire Section */}
+            <div className="d-flex align-items-center justify-content-md-start justify-content-center">
               <div className="hire-icon">
                 <img src={arrowImg} alt="Arrow Icon" className="hire-arrow" />
               </div>
@@ -40,7 +40,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Image */}
-          <div className="col-md-6 text-center position-relative">
+          <div className="col-md-6 text-center position-relative mt-3">
             <img
               src={heroImg}
               alt="Developer Illustration"

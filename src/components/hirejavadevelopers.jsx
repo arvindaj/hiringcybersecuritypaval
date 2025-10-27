@@ -35,15 +35,15 @@ const HireJavaDevelopers = () => {
 
   return (
     <section
-      className="text-center py-5 position-relative overflow-hidden  d-flex flex-column justify-content-center"
+      className="text-center py-5 position-relative overflow-hidden  d-flex flex-column justify-content-center vh-100" 
       style={{
         backgroundColor: "#0b0e16",
         color: "#fff",
       }}
     >
       {/* 🔹 Auto Logo Slider Section */}
-      <div className="logo-slider-wrapper mb-5 overflow-hidden position-relative">
-        <div className="logo-slider d-flex align-items-center">
+      <div className="logo-slider-wrapper mb-5  overflow-hidden position-relative">
+        <div className="logo-slider d-flex align-items-start">
           {[...logos, ...logos].map((logo, index) => (
             <div key={index} className="px-4 flex-shrink-0">
               <img
@@ -71,7 +71,7 @@ const HireJavaDevelopers = () => {
           alt="center-background"
           className="img-fluid"
           style={{
-            width: "650px",
+            width: "set(80vh, 80vw)",
             maxWidth: "80vw",
             filter: "drop-shadow(0 0 60px rgba(166,255,0,0.2))",
           }}
@@ -80,17 +80,16 @@ const HireJavaDevelopers = () => {
 
       {/* 🔹 Text Section */}
       <div className="container position-relative" style={{ zIndex: 1 }}>
-        <p className="small mb-2">Hire UI/UX Developers</p>
+        <p className="small mb-2">Hiring Workflow
+</p>
         <h2 className="fw-bold mb-3">
-          Hire the best <span className="">Mobile Developers</span>
+          Hire The Best Cyber Security
         </h2>
         <p
           className="text-light mb-4 "
           style={{ maxWidth: "650px", margin: "0 auto" }}
         >
-          Build Smarter Software with Python Developers You Can Rely On. Do you
-          want to move fast, drive security, and embark on scalability for your
-          product?
+      Build Smarter Software with Python Developers You Can Rely On Do you want to move fast, drive security, and embark on scalability for your product?
         </p>
 
         <button
